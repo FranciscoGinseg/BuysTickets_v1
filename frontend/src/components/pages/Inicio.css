@@ -1,0 +1,44 @@
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+  }
+  
+  .marquee-content {
+    display: flex;
+    animation: marquee 25s linear infinite;
+  }
+  
+  .marquee-track {
+    display: flex;
+  }
+  
+  .marquee-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px; /* Esto garantiza que haya espacio entre los bloques */
+  }
+  
+  .marquee-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .marquee-images {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .marquee-image {
+    height: 80px; /* Ajusta el tamaño de las imágenes */
+  }
+  

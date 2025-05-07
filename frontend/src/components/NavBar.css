@@ -1,0 +1,12 @@
+.custom-logo {
+    height: 75px; /* Ajusta el tamaño del logo */
+    width: auto; /* Mantiene la proporción */
+}
+
+.profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}

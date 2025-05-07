@@ -1,0 +1,26 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.cache/
+dist/
+
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+.env
+venv/
+env/
+*.egg-info/
+
+# Mac
+.DS_Store
+
+# VS Code
+.vscode/
+
+# LFS temporales
+*.pack
+frontend/node_modules/
