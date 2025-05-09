@@ -1,7 +1,7 @@
 from flask import Blueprint, request, jsonify
 from ..utils.db import cursor, db  # Importar cursor y db desde utils/db.py
 from utils.helpers import hash_password, verify_password
-from utils.mail import enviar_correo_eliminacion
+from app.utils.mail import enviar_correo_eliminacion
 import base64
 
 user_bp = Blueprint('user', __name__)

@@ -6,3 +6,7 @@
 from .auth import auth_bp
 from .user import user_bp
 from .premium import premium_bp
+from .solicitudes import solicitudes_bp
+
+
+

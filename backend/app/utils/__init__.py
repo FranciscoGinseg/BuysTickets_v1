@@ -22,9 +22,11 @@ def create_app(config_object='app.config.Config'):
     from app.routes.user import user_bp
     from app.routes.premium import premium_bp
 
+
     app.register_blueprint(auth_bp)
     app.register_blueprint(user_bp)
     app.register_blueprint(premium_bp)
+
 
     # Puedes agregar más configuraciones, como manejadores de errores o señales
 
