@@ -34,6 +34,8 @@ const NavBar = () => {
     const [nuevaPassword, setNuevaPassword] = useState("");
     const [recoveryError, setRecoveryError] = useState("");
     const [recoverySuccess, setRecoverySuccess] = useState("");
+
+
     // Verificación adicional para manejar el caso en que el usuario se elimina
     useEffect(() => {
         const verificarUsuario = async () => {
@@ -421,7 +423,12 @@ const handleCambiarPassword = async () => {
                         <Button variant="primary" type="submit" className="w-100">{t("Registrarse")}</Button>
                     </Form>
                     <div className="text-center mt-3">
-                        <p>{t("Tienes una cuenta")}<Button variant="link" onClick={() => { setShowLogin(true); setShowRegister(false); }}>{t("Iniciar Sesión")}</Button></p>
+                        <p>{t("Tienes una cuenta")}
+                            <Button variant="link" onClick={() =>{ setShowLogin(true); setShowRegister(false); }}>
+                                {t("Iniciar Sesión")}
+                            </Button>
+                        
+                        </p>
                     </div>
                 </Modal.Body>
             </Modal>
